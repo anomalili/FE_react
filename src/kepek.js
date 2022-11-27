@@ -1,4 +1,4 @@
-import './ kep.css';
+
 import React  from 'react';
 
 function Kep(props) {
