@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,16 +9,30 @@
   }
 }
 
+main {max-width: 800px;   align-items: center;
+  justify-content: center; margin: auto;}
+
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Sofia", sans-serif;
+  min-height: 20vh;
+  text-shadow: 3px 3px 3px #ababab;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  grid-area: h;
+  
 }
+
+footer {grid-area: f; max-width: 800px;}
+
+aside {font-family: Arial, Helvetica, sans-serif; background-color: #282c34; color: antiquewhite; grid-area: as; max-width: 200px; text-align: justify;}
+
+article {color: red; grid-area: a; max-width: 550px;}
 
 .App-link {
   color: #61dafb;
