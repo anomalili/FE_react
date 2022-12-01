@@ -2,7 +2,9 @@ import "./App.css";
 import React from "react";
 import Kep from "./Kep";
 import foKep from "./Fokep";
+import ReactDOM from "react-dom";
 
+ReactDOM.render(<foKep/>, document.getElementById('root'));
 
 const Kepeim = [
   {
@@ -120,11 +122,11 @@ const Kepeim = [
 function App() {
   function elozoKep() {
     console.log("nem hátra");
+
   }
   function kovetkezoKep() {
     console.log("előre");
   }
-
   return (
     <main>
       <div className="App">
@@ -139,14 +141,7 @@ function App() {
             </button>
           </div>
         </header>
-        <div class="fokepClass">
-          {
-            //<foKep/>
-
-            <foKep source={require("./kepek/1.jpg")} />
-          }
-        </div>
-
+           <foKep />
         <article className="galeria">
           {Kepeim.map((kep, index) => {
             return <Kep kepAdat={kep} key={index} />;
