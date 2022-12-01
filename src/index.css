@@ -1,3 +1,22 @@
+/* gombok */
+
+.elozo {text-align: left; margin-right: 20px;}
+
+.kovetkezo {text-align: right; margin-left: 20px;}
+
+/* főkép m */
+
+.fokepClass {margin: auto; max-width:  500px; max-height:  400px; background-color: aqua;}
+
+.Logo {
+  background-image: url("https://etananyag.szamalk-szalezi.hu/theme/image.php/adaptable/core/1655724880/u/f2");
+}
+
+.galeria img:hover{ 
+  opacity: 50%; size: 150%;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,171 +1,159 @@
+import "./App.css";
+import React from "react";
+import Kep from "./Kep";
+import foKep from "./Fokep";
 
-import './App.css';
-import React from 'react';
-import Kep from './kepek';
-
-/* 
-https://freeimage.host/i/HK5brUQ
-https://freeimage.host/i/HK5bg0x
-https://freeimage.host/i/HK5b8ib
-https://freeimage.host/i/HK5bUfj
-https://freeimage.host/i/HK5bP5B
-https://freeimage.host/i/HK5biOP
-https://freeimage.host/i/HK5bsb1
-https://freeimage.host/i/HK5bQzF
-https://freeimage.host/i/HK5bZWg
-https://freeimage.host/i/HK5bbqJ
-https://freeimage.host/i/HK5btsa
-https://freeimage.host/i/HK5bpgR
-https://freeimage.host/i/HK5mH5N
-https://freeimage.host/i/HK5m9Jp
-https://freeimage.host/i/HK5mJeI
-https://freeimage.host/i/HK5m3zX
-https://freeimage.host/i/HK5mFXn
-https://freeimage.host/i/HK5mdbt
-https://freeimage.host/i/HK5mqqG
-https://freeimage.host/i/HK5mB1f
-https://freeimage.host/i/HK5mKss */
 
 const Kepeim = [
   {
-    id:1,
-    cim:"szep kepecske",
-    kep:"https://iili.io/HK5brUQ.jpg"
+    id: 1,
+    cim: "szep kepecske",
+    kep: "kepek/1.jpg",
   },
   {
-    id:2,
-    cim:"",
-    kep: "https://iili.io/HK5mKss.jpg"
+    id: 2,
+    cim: "",
+    kep: "kepek/2.jpg",
   },
   {
-    id:3,
-    cim:"",
-    kep: "https://iili.io/HK5mB1f.jpg"
+    id: 3,
+    cim: "",
+    kep: "kepek/3.jpg",
   },
   {
-    id:4,
-    cim:"",
-    kep: "https://iili.io/HK5mqqG.jpg"
+    id: 4,
+    cim: "",
+    kep: "kepek/4.jpg",
   },
   {
-    id:5,
-    cim:"",
-    kep: "https://iili.io/HK5mdbt.jpg"
+    id: 5,
+    cim: "",
+    kep: "kepek/5.jpg",
   },
   {
-    id:6,
-    cim:"",
-    kep: "https://iili.io/HK5mFXn.jpg"
+    id: 6,
+    cim: "",
+    kep: "kepek/6.jpg",
   },
   {
-    id:7,
-    cim:"",
-    kep: "https://iili.io/HK5m3zX.jpg"
+    id: 7,
+    cim: "",
+    kep: "kepek/7.jpg",
   },
   {
-    id:8,
-    cim:"",
-    kep: "https://iili.io/HK5bUfj.jpg"
+    id: 8,
+    cim: "",
+    kep: "kepek/8.jpg",
   },
   {
-    id:9,
-    cim:"",
-    kep: "https://iili.io/HK5brUQ.jpg"
+    id: 9,
+    cim: "",
+    kep: "kepek/9.jpg",
   },
   {
-    id:10,
-    cim:"",
-    kep: "https://iili.io/HK5biOP.jpg"
+    id: 10,
+    cim: "",
+    kep: "kepek/10.jpg",
   },
   {
-    id:11,
-    cim:"",
-    kep: "https://iili.io/HK5bg0x.jpg"
+    id: 11,
+    cim: "",
+    kep: "kepek/11.jpg",
   },
   {
-    id:12,
-    cim:"",
-    kep: "https://iili.io/HK5bP5B.jpg"
+    id: 12,
+    cim: "",
+    kep: "kepek/12.jpg",
   },
   {
-    id:13,
-    cim:"",
-    kep: "https://iili.io/HK5b8ib.jpg"
+    id: 13,
+    cim: "",
+    kep: "kepek/13.jpg",
   },
   {
-    id:14,
-    cim:"",
-    kep: "https://iili.io/HK5bsb1.jpg"
+    id: 14,
+    cim: "",
+    kep: "kepek/14.webp",
   },
   {
-    id:15,
-    cim:"",
-    kep: "https://iili.io/HK5bQzF.jpg"
+    id: 15,
+    cim: "",
+    kep: "kepek/15.webp",
   },
   {
-    id:16,
-    cim:"",
-    kep: "https://iili.io/HK5bZWg.jpg"
+    id: 16,
+    cim: "",
+    kep: "kepek/16.jpg",
   },
   {
-    id:17,
-    cim:"",
-    kep: "https://iili.io/HK5bbqJ.jpg"
+    id: 17,
+    cim: "",
+    kep: "kepek/17.jpg",
   },
   {
-    id:18,
-    cim:"",
-    kep: "https://iili.io/HK5btsa.jpg"
+    id: 18,
+    cim: "",
+    kep: "kepek/18.jpg",
   },
   {
-    id:19,
-    cim:"",
-    kep: "https://iili.io/HK5bpgR.jpg"
+    id: 19,
+    cim: "",
+    kep: "kepek/19.jpg",
   },
   {
-    id:20,
-    cim:"",
-    kep: "https://iili.io/HK5mH5N.jpg"
+    id: 20,
+    cim: "",
+    kep: "kepek/20.jpeg",
   },
   {
-    id:21,
-    cim:"",
-    kep: "https://iili.io/HK5mJeI.webp"
-  }
-
-]
-
-
+    id: 21,
+    cim: "",
+    kep: "kepek/21.jpg",
+  },
+  {
+    id: 22,
+    cim: "",
+    kep: "kepek/22.jpg",
+  },
+];
 
 function App() {
-
-
-  function kosarFeldolgoz(adat) {
-    console.log(adat);
-  } 
+  function elozoKep() {
+    console.log("nem hátra");
+  }
+  function kovetkezoKep() {
+    console.log("előre");
+  }
 
   return (
     <main>
-    <div className="App">
-      <header className="App-header">
-        <h1>  hibrid állatok ♥</h1>
-      </header>
+      <div className="App">
+        <header className="App-header">
+          <h1>hibrid állatok ♥</h1>
+          <div class="gombok">
+            <button className="elozo" onClick={elozoKep}>
+              ◀
+            </button>
+            <button className="kovetkezo" onClick={kovetkezoKep}>
+              ▶
+            </button>
+          </div>
+        </header>
+        <div class="fokepClass">
+          {
+            //<foKep/>
 
-      <article className="galeria">
-
-      {
-        Kepeim.map((kep, index)=>{
-            return(<Kep kepAdat={kep} key={index} kosarKattintasMetodus={kosarFeldolgoz}/>)
+            <foKep source={require("./kepek/1.jpg")} />
           }
-        )
-      }
-        
+        </div>
 
-      </article>
-      <footer>
-        <p>the night is dark and full of terror</p>
-      </footer>
-    </div>
+        <article className="galeria">
+          {Kepeim.map((kep, index) => {
+            return <Kep kepAdat={kep} key={index} />;
+          })}
+        </article>
+        <footer></footer>
+      </div>
     </main>
   );
 }
