@@ -4,7 +4,7 @@ import Kep from "./Kep";
 import foKep from "./Fokep";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(<foKep/>, document.getElementById('root'));
+ReactDOM.render(<foKep />, document.getElementById('root'));
 
 const Kepeim = [
   {
@@ -141,8 +141,13 @@ function App() {
             </button>
           </div>
         </header>
-           <foKep />
+        <div className="fokepApp">
+          <h1>itt vagyok</h1>
+          <foKep />
+        </div> 
+
         <article className="galeria">
+        
           {Kepeim.map((kep, index) => {
             return <Kep kepAdat={kep} key={index} />;
           })}

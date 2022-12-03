@@ -6,7 +6,7 @@
 
 /* főkép m */
 
-.fokepClass {margin: auto; max-width:  500px; max-height:  400px; background-color: aqua;}
+.fokepApp{margin: auto; min-width:  500px; min-height:  400px; background-color: aqua;}
 
 .Logo {
   background-image: url("https://etananyag.szamalk-szalezi.hu/theme/image.php/adaptable/core/1655724880/u/f2");

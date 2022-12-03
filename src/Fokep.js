@@ -119,8 +119,8 @@ function foKep() {
 
     return (
       
-      <div className="fokepecske">
-        <h1>Halo</h1>
+      <div className="fokep">
+        <h1>Halo</h1>     
       </div>
     );
 }
