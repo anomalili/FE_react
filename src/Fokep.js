@@ -1,5 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
+import { ReactDOM } from "react";
+import Kep from "./Kep";
 const Kepeim = [
   {
     id: 1,
@@ -115,17 +117,28 @@ const Kepeim = [
 ]
 
 
-function foKep() {
 
-    return (
-      
-      <div className="fokep">
-        <h1>Halo</h1>     
-      </div>
+class FoKep extends React.Component {
+/* 
+  fokepMegjelen = () => {
+    console.log("helloak");
+
+    ReactDOM.render(<foKep />, document.getElementById(".fokep"));
+  } */
+
+
+  render(){
+  return(
+<div>
+  <h1>LÁTHATÓ VAGYOK?!</h1>
+  <img src={require('https://miro.medium.com/max/828/1*0V-dvvfo3zILTPL0yB0nEA.webp')}/>
+</div>
+
     );
+  }
 }
 
-export default foKep;
+export default FoKep;
 
 
 
